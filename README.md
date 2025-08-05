@@ -45,4 +45,5 @@ git clone https://github.com/Cuervo279/DIO_csharp_sistema_estacionamento.git
 ```
 
 Desenvolvido por Leonardo Cuervo 💻
-Contato: ![LinkedIn](https://www.linkedin.com/in/leonardo-bastos-silva/) | ![GitHub](https://github.com/Cuervo279/)
+
+Contato: [LinkedIn](https://www.linkedin.com/in/leonardo-bastos-silva/) | [GitHub](https://github.com/Cuervo279/)
