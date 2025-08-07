@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            dgvUsuarios = new DataGridView();
             dateTimePicker1 = new DateTimePicker();
             dateTimePicker2 = new DateTimePicker();
             label1 = new Label();
@@ -37,19 +38,30 @@
             textBox2 = new TextBox();
             btnPesquisa = new Button();
             button1 = new Button();
-            btnVoltar = new Button();
             button3 = new Button();
             button4 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvUsuarios
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 51);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1020, 500);
-            dataGridView1.TabIndex = 0;
+            dgvUsuarios.AllowUserToAddRows = false;
+            dgvUsuarios.AllowUserToDeleteRows = false;
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = Color.WhiteSmoke;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle1;
+            dgvUsuarios.Location = new Point(12, 51);
+            dgvUsuarios.Name = "dgvUsuarios";
+            dgvUsuarios.RowHeadersVisible = false;
+            dgvUsuarios.Size = new Size(1020, 500);
+            dgvUsuarios.TabIndex = 0;
             // 
             // dateTimePicker1
             // 
@@ -124,27 +136,12 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Bahnschrift SemiLight", 8.25F);
             button1.ForeColor = Color.WhiteSmoke;
-            button1.Location = new Point(579, 557);
+            button1.Location = new Point(885, 560);
             button1.Name = "button1";
-            button1.Size = new Size(147, 23);
+            button1.Size = new Size(147, 32);
             button1.TabIndex = 15;
             button1.Text = "EXCLUIR";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // btnVoltar
-            // 
-            btnVoltar.BackColor = Color.MediumSeaGreen;
-            btnVoltar.FlatAppearance.BorderSize = 0;
-            btnVoltar.FlatStyle = FlatStyle.Flat;
-            btnVoltar.Font = new Font("Bahnschrift SemiLight", 8.25F);
-            btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(885, 557);
-            btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(147, 23);
-            btnVoltar.TabIndex = 16;
-            btnVoltar.Text = "VOLTAR";
-            btnVoltar.UseVisualStyleBackColor = false;
-            btnVoltar.Click += btnVoltar_Click;
             // 
             // button3
             // 
@@ -153,9 +150,9 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Bahnschrift SemiLight", 8.25F);
             button3.ForeColor = Color.Black;
-            button3.Location = new Point(732, 557);
+            button3.Location = new Point(732, 560);
             button3.Name = "button3";
-            button3.Size = new Size(147, 23);
+            button3.Size = new Size(147, 32);
             button3.TabIndex = 17;
             button3.Text = "CANCELAR";
             button3.UseVisualStyleBackColor = false;
@@ -167,14 +164,14 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Bahnschrift SemiLight", 8.25F);
             button4.ForeColor = Color.Black;
-            button4.Location = new Point(426, 557);
+            button4.Location = new Point(579, 560);
             button4.Name = "button4";
-            button4.Size = new Size(147, 23);
+            button4.Size = new Size(147, 32);
             button4.TabIndex = 18;
             button4.Text = "NOVO";
             button4.UseVisualStyleBackColor = false;
             // 
-            // frmCadastro
+            // frmUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -182,7 +179,6 @@
             ClientSize = new Size(1044, 601);
             Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(btnVoltar);
             Controls.Add(button1);
             Controls.Add(btnPesquisa);
             Controls.Add(textBox2);
@@ -191,18 +187,18 @@
             Controls.Add(label1);
             Controls.Add(dateTimePicker2);
             Controls.Add(dateTimePicker1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvUsuarios);
             ForeColor = Color.WhiteSmoke;
-            Name = "frmCadastro";
+            Name = "frmUsuarios";
             Text = "frmCadastro";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvUsuarios;
         private DateTimePicker dateTimePicker1;
         private DateTimePicker dateTimePicker2;
         private Label label1;
@@ -211,7 +207,6 @@
         private TextBox textBox2;
         private Button btnPesquisa;
         private Button button1;
-        private Button btnVoltar;
         private Button button3;
         private Button button4;
     }

@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            pnlVagaAuto = new Panel();
             SuspendLayout();
             // 
-            // frmHome
+            // pnlVagaAuto
+            // 
+            pnlVagaAuto.AutoScroll = true;
+            pnlVagaAuto.Location = new Point(12, 63);
+            pnlVagaAuto.Name = "pnlVagaAuto";
+            pnlVagaAuto.Size = new Size(400, 550);
+            pnlVagaAuto.TabIndex = 0;
+            // 
+            // frmEstacionamento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 40, 40);
             ClientSize = new Size(1044, 601);
-            Name = "frmHome";
+            Controls.Add(pnlVagaAuto);
+            Name = "frmEstacionamento";
             Text = "frmHome";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel pnlVagaAuto;
     }
 }

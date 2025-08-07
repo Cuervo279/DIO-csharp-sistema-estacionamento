@@ -32,13 +32,10 @@ namespace DIO_csharp_sistema_estacionamento
 
         private void CarregaElementos()
         {
-            lblHorarioEntrada.Text = "07:08";
 
-            lblHorarioSaida.Text = DateTime.Now.ToString("HH:mm");
 
             cmbFormaPagamento.SelectedIndex = 2;
 
-            CalculaTotal();
         }
 
 
@@ -46,6 +43,10 @@ namespace DIO_csharp_sistema_estacionamento
         {
             try
             {
+                lblHorarioEntrada.Text = "07:08";
+
+                lblHorarioSaida.Text = DateTime.Now.ToString("HH:mm");
+
                 DateTime entrada = Convert.ToDateTime(lblHorarioEntrada.Text);
                 DateTime saida = Convert.ToDateTime(lblHorarioSaida.Text);
 
@@ -66,6 +67,10 @@ namespace DIO_csharp_sistema_estacionamento
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+
+
+            CalculaTotal();
+
             string cpf = txtPesquisa.Text;
 
             DataTable dt = bll.preencheUsuarioCaixa(cpf);

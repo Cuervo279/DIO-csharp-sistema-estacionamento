@@ -43,3 +43,4 @@ C:\Programas\Projetos\Vanilla\DIO-csharp-sistema-estacionamento\DIO-csharp-siste
 C:\Programas\Projetos\Vanilla\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\obj\Debug\net8.0-windows\DIO-csharp-sistema-estacionamento.csproj.AssemblyReference.cache
 C:\Programas\Projetos\Vanilla\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\obj\Debug\net8.0-windows\DIO-csha.F07433D2.Up2Date
 C:\Programas\Projetos\Vanilla\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\obj\Debug\net8.0-windows\DIO_csharp_sistema_estacionamento.frmCaixa.resources
+C:\Programas\Projetos\Vanilla\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\DIO-csharp-sistema-estacionamento\obj\Debug\net8.0-windows\DIO_csharp_sistema_estacionamento.painelEstacionamento.resources

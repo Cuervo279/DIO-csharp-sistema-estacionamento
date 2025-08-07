@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnConfirmar = new Label();
-            btnCancelar = new Label();
             label21 = new Label();
             label1 = new Label();
             txtPesquisa = new TextBox();
@@ -54,31 +52,8 @@
             lblNomeUsuario = new Label();
             btnOK = new Button();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
-            // 
-            // btnConfirmar
-            // 
-            btnConfirmar.BackColor = Color.MediumSeaGreen;
-            btnConfirmar.Font = new Font("Bahnschrift SemiLight", 10F);
-            btnConfirmar.ForeColor = Color.Black;
-            btnConfirmar.Location = new Point(744, 526);
-            btnConfirmar.Name = "btnConfirmar";
-            btnConfirmar.Size = new Size(136, 66);
-            btnConfirmar.TabIndex = 13;
-            btnConfirmar.Text = "CONFIRMAR";
-            btnConfirmar.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.BackColor = Color.Orange;
-            btnCancelar.Font = new Font("Bahnschrift SemiLight", 10F);
-            btnCancelar.ForeColor = Color.Black;
-            btnCancelar.Location = new Point(591, 526);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(136, 66);
-            btnCancelar.TabIndex = 14;
-            btnCancelar.Text = "CANCELAR";
-            btnCancelar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label21
             // 
@@ -235,19 +210,18 @@
             lblTotalTempo.Padding = new Padding(10, 0, 0, 0);
             lblTotalTempo.Size = new Size(187, 34);
             lblTotalTempo.TabIndex = 40;
-            lblTotalTempo.Text = "11:12";
             lblTotalTempo.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblTotalPagar
             // 
             lblTotalPagar.Font = new Font("Bahnschrift SemiLight", 20F);
             lblTotalPagar.ForeColor = Color.WhiteSmoke;
-            lblTotalPagar.Location = new Point(272, 408);
+            lblTotalPagar.Location = new Point(272, 406);
             lblTotalPagar.Name = "lblTotalPagar";
             lblTotalPagar.Padding = new Padding(10, 0, 0, 0);
-            lblTotalPagar.Size = new Size(187, 34);
+            lblTotalPagar.RightToLeft = RightToLeft.No;
+            lblTotalPagar.Size = new Size(153, 34);
             lblTotalPagar.TabIndex = 41;
-            lblTotalPagar.Text = "11:12";
             lblTotalPagar.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblHorarioEntrada
@@ -259,7 +233,6 @@
             lblHorarioEntrada.Padding = new Padding(10, 0, 0, 0);
             lblHorarioEntrada.Size = new Size(187, 34);
             lblHorarioEntrada.TabIndex = 42;
-            lblHorarioEntrada.Text = "11:12";
             lblHorarioEntrada.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblHorarioSaida
@@ -271,7 +244,6 @@
             lblHorarioSaida.Padding = new Padding(10, 0, 0, 0);
             lblHorarioSaida.Size = new Size(187, 34);
             lblHorarioSaida.TabIndex = 43;
-            lblHorarioSaida.Text = "11:12";
             lblHorarioSaida.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblCupom
@@ -346,18 +318,31 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Crimson;
+            button1.BackColor = Color.Orange;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Bahnschrift SemiLight", 10F);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(896, 526);
+            button1.Location = new Point(744, 523);
             button1.Name = "button1";
             button1.Size = new Size(136, 66);
             button1.TabIndex = 50;
-            button1.Text = "VOLTAR";
+            button1.Text = "CANCELAR";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.MediumSeaGreen;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Bahnschrift SemiLight", 10F);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(894, 523);
+            button2.Name = "button2";
+            button2.Size = new Size(136, 66);
+            button2.TabIndex = 51;
+            button2.Text = "CONFIRMAR";
+            button2.UseVisualStyleBackColor = false;
             // 
             // frmCaixa
             // 
@@ -365,6 +350,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(48, 48, 48);
             ClientSize = new Size(1044, 601);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(btnOK);
             Controls.Add(lblNomeUsuario);
@@ -389,8 +375,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(label21);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnConfirmar);
             ForeColor = Color.WhiteSmoke;
             Name = "frmCaixa";
             Text = "frmCaixa";
@@ -399,8 +383,6 @@
         }
 
         #endregion
-        private Label btnConfirmar;
-        private Label btnCancelar;
         private Label label21;
         private Label label1;
         private TextBox txtPesquisa;
@@ -425,5 +407,6 @@
         private Label lblNomeUsuario;
         private Button btnOK;
         private Button button1;
+        private Button button2;
     }
 }
